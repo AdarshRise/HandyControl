@@ -17,6 +17,11 @@
 
 [https://handyorg.github.io/handycontrol/](https://handyorg.github.io/handycontrol/)
 
+### English Documentation
+
+[https://ghost1372.github.io/](https://github.com/ghost1372/HandyControl/wiki)
+
+
 ### Donation
 If you believe Handy Control is a good project, and you have some spare money, you could donate via these 2 methods:
 
