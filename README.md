@@ -21,6 +21,8 @@
 
 [https://ghost1372.github.io/](https://github.com/ghost1372/HandyControl/wiki)
 
+### English Chat Room
+[Wish To chat](https://gitter.im/HandyControl/Lobby)
 
 ### Donation
 If you believe Handy Control is a good project, and you have some spare money, you could donate via these 2 methods:
