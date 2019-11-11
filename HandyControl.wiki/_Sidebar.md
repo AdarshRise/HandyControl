@@ -91,6 +91,7 @@
     + [OutlineText](OutlineText-Control)
     + [Pagination](Pagination-Control)
     + [PasswordBox](PasswordBox-Control)
+    + [PopTip](PopTip-Control)
     + [PopupWindow](PopupWindow-Control)
     + [PreviewSlider](PreviewSlider-Control)
     + [ProgressButton](ProgressButton-Control)

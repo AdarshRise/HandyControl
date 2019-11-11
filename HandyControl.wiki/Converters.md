@@ -3,17 +3,17 @@
 | Converter | Description |
 | ---------- |  ---------- |
 | Boolean2BooleanReConverter | 
-| Boolean2StrConverter | 
+| Boolean2StringConverter | 
 | Boolean2VisibilityReConverter |
 | BooleanArr2VisibilityConverter |
 | BorderCircularClipConverter |
 | BorderCircularConverter |
 | BorderClipConverter |
 | Color2ChannelAConverter |
-| Color2HexStrConverter |
-| Int2StrConverter |
+| Color2HexStringConverter |
+| Int2StringConverter |
 | Long2FileSizeConverter |
-|  Number2PercentageConverter |
+| Number2PercentageConverter |
 | Object2BooleanConverter |
 | Object2VisibilityConverter |
 | RectangleCircularConverter |
@@ -23,3 +23,5 @@
 | ThicknessSplitConverter |
 | CornerRadiusSplitConverter |
 | ColLayoutConverter |
+| MenuScrollingVisibilityConverter |
+| Double2GridLengthConverter |

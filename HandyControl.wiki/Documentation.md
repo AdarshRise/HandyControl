@@ -150,55 +150,45 @@ ConfigHelper.Instance.SetLang("fr");
 </tr>
 <tr>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/PasswordBox-Control">PasswordBox</a></td>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/PopTip-Control">PopTip</a></td>
 
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/PopupWindow-Control">PopupWindow</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/PreviewSlider-Control">PreviewSlider</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/ProgressButton-Control">ProgressButton</a></td>
 
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/ProgressButton-Control">ProgressButton</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/RangeSlider-Control">RangeSlider</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Rate-Control">Rate</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/RunningBlock-Control">RunningBlock</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/ScrollViewer-Control">ScrollViewer</a></td>
-
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/ScrollViewer-Control">ScrollViewer</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/SearchBar-Control">SearchBar</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Shield-Control">Shield</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/SideMenu-Control">SideMenu</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/SimplePanel-Control">SimplePanel</a></td>
-
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/SimplePanel-Control">SimplePanel</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/SimpleItemsControl-Control">SimpleItemsControl</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/SplitButton-Control">SplitButton</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Sprite-Control">Sprite</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/StepBar-Control">StepBar</a></td>
-
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/StepBar-Control">StepBar</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/TabControl-Control">TabControl</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Tag-Control">Tag</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/TextBox-Control">TextBox</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/TimeBar-Control">TimeBar</a></td>
-
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/TimeBar-Control">TimeBar</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/TimePicker-Control">TimePicker</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Transfer-Control">Transfer</a></td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/TransitioningContentControl-Control">TransitioningContentControl</a></td>
-<td><a href="https://github.com/ghost1372/HandyControl/wiki/WaterfallPanel-Control">WaterfallPanel</td>
-
 </tr>
 <tr>
+<td><a href="https://github.com/ghost1372/HandyControl/wiki/WaterfallPanel-Control">WaterfallPanel</td>
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/WaveProgressBar-Control">WaveProgressBar</a></td>
-
 <td><a href="https://github.com/ghost1372/HandyControl/wiki/Window-Control">Window</a></td>
 </tr>
 </table>

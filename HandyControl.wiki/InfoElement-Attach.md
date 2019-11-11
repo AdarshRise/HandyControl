@@ -2,28 +2,14 @@ An attached property is intended to be used as a type of global property that is
 
 InfoElement Contains 
 
-<table>
-<tr>
-<td><b>Property</b></td>
-<td><b>Description</b></td>
-</tr>
-<tr>
-<td>Placeholder</td>
-<td>Gets or sets text that appears in the textbox before the user has focused or entered any text.</td>
-</tr>
-<tr>
-<td>Necessary</td>
-<td>Gets or sets Displays an error message that reminds you to enter the entry</td>
-</tr>
-<tr>
-<td>Symbol</td>
-<td>Gets or sets The sign that will be displayed for mandatory input filling</td>
-</tr>
-<tr>
-<td>ContentHeight</td>
-<td>Gets or sets height of the box</td>
-</tr>
-</table>
+| Property | Description |
+| -------- | ------- |
+| Placeholder | Gets or sets text that appears in the textbox before the user has focused or entered any text. |
+| Necessary | Gets or sets Displays an error message that reminds you to enter the entry |
+| Symbol | Gets or sets The sign that will be displayed for mandatory input filling |
+| ContentHeight | Gets or sets height of the box |
+| MinContentHeight | Gets or sets Minimum Height of the Content |
+| MaxContentHeight | Gets or sets Maximum Height of the Content |
 
 ## Usage in Xaml
 First add HandyControl NameSpace

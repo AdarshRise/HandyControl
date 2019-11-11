@@ -20,7 +20,7 @@ then in your xaml
 ```
 | **Available Properti**es | **Description**                                             |
 | ------------------------ | ----------------------------------------------------------- |
-| HitMode | Hover - Click                           |
+| HitMode | Includes Click, Hover, Focus, None  |
 
 
 | Available Styles |
