@@ -9,9 +9,16 @@
         <ResourceDictionary Source="../Basic/Paths.xaml"/>
         <ResourceDictionary Source="../Basic/Converters.xaml"/>
         <ResourceDictionary Source="Button.xaml"/>
+        <ResourceDictionary Source="RepeatButton.xaml"/>
         <ResourceDictionary Source="ToggleButton.xaml"/>
         <ResourceDictionary Source="Base/TabControlBaseStyle.xaml"/>
     </ResourceDictionary.MergedDictionaries>
+
+    <ContextMenu x:Key="TabItemMenu" x:Shared="False">
+        <MenuItem Command="interactivity:ControlCommands.Close" Header="{x:Static langs:Lang.Close}"/>
+        <MenuItem Command="interactivity:ControlCommands.CloseAll" Header="{x:Static langs:Lang.CloseAll}"/>
+        <MenuItem Command="interactivity:ControlCommands.CloseOther" Header="{x:Static langs:Lang.CloseOther}"/>
+    </ContextMenu>
 
     <Style TargetType="controls:TabItem">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -23,6 +30,7 @@
         <Setter Property="Padding" Value="16,0"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Menu" Value="{StaticResource TabItemMenu}"/>
         <Setter Property="HeaderTemplate">
             <Setter.Value>
                 <DataTemplate>
@@ -33,18 +41,11 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:TabItem">
-                    <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
+                    <Grid x:Name="templateRoot" SnapsToDevicePixels="true" ContextMenu="{TemplateBinding Menu}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Grid.ContextMenu>
-                            <ContextMenu>
-                                <MenuItem Command="interactivity:ControlCommands.Close" Header="{x:Static langs:Lang.Close}"/>
-                                <MenuItem Command="interactivity:ControlCommands.CloseAll" Header="{x:Static langs:Lang.CloseAll}"/>
-                                <MenuItem Command="interactivity:ControlCommands.CloseOther" Header="{x:Static langs:Lang.CloseOther}"/>
-                            </ContextMenu>
-                        </Grid.ContextMenu>
                         <Border Grid.ColumnSpan="2" BorderThickness="{TemplateBinding BorderThickness}" x:Name="mainBorder" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" Margin="0">
                             <Border Margin="0,0,0,-1" x:Name="innerBorder" Background="{DynamicResource RegionBrush}" Opacity="0"/>
                         </Border>
@@ -56,7 +57,7 @@
                                 </LinearGradientBrush>
                             </ContentPresenter.OpacityMask>
                         </ContentPresenter>
-                        <Button Grid.Column="1" Focusable="False" Command="interactivity:ControlCommands.Close" Visibility="{Binding ShowCloseButton,RelativeSource={RelativeSource AncestorType=controls:TabControl},Converter={StaticResource Boolean2VisibilityConverter}}" Background="Transparent" Style="{StaticResource ButtonCustom}" Width="28">
+                        <Button Grid.Column="1" Focusable="False" Command="interactivity:ControlCommands.Close" Visibility="{TemplateBinding ShowCloseButton,Converter={StaticResource Boolean2VisibilityConverter}}" Background="Transparent" Style="{StaticResource ButtonCustom}" Width="28">
                             <Path Fill="{DynamicResource PrimaryTextBrush}" Width="8" Height="8" Style="{StaticResource ClosePathStyle}"/>
                         </Button>
                     </Grid>
@@ -119,7 +120,7 @@
                     <Border.CacheMode>
                         <BitmapCache SnapsToDevicePixels="True"/>
                     </Border.CacheMode>
-                    <Button Focusable="False" Style="{StaticResource ButtonIcon}" Padding="8" controls:IconElement.Geometry="{StaticResource LeftGeometry}" Foreground="{DynamicResource PrimaryTextBrush}" Background="{DynamicResource SecondaryRegionBrush}" x:Name="PART_ScrollButtonLeft"/>
+                    <RepeatButton Focusable="False" Style="{StaticResource RepeatButtonIcon}" Padding="8" controls:IconElement.Geometry="{StaticResource LeftGeometry}" Foreground="{DynamicResource PrimaryTextBrush}" Background="{DynamicResource SecondaryRegionBrush}" x:Name="PART_ScrollButtonLeft"/>
                 </Border>
                 <controls:ScrollViewer HorizontalScrollBarVisibility="Hidden" CanMouseWheel="True" Orientation="Horizontal" IsEnableInertia="True" Grid.Row="0" Grid.Column="1" IsDeferredScrollingEnabled="True" x:Name="PART_OverflowScrollviewer">
                     <Border Background="{TemplateBinding Background}" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource BorderBrush}" Name="PART_HeaderBorder">
@@ -139,7 +140,7 @@
                         <BitmapCache SnapsToDevicePixels="True"/>
                     </Border.CacheMode>
                     <StackPanel Orientation="Horizontal">
-                        <Button Focusable="False" Visibility="{TemplateBinding ShowScrollButton,Converter={StaticResource Boolean2VisibilityConverter}}" Style="{StaticResource ButtonIcon}" BorderBrush="{DynamicResource BorderBrush}" Padding="8" controls:IconElement.Geometry="{StaticResource RightGeometry}" Foreground="{DynamicResource PrimaryTextBrush}" Background="{DynamicResource SecondaryRegionBrush}" x:Name="PART_ScrollButtonRight"/>
+                        <RepeatButton Focusable="False" Visibility="{TemplateBinding ShowScrollButton,Converter={StaticResource Boolean2VisibilityConverter}}" Style="{StaticResource RepeatButtonIcon}" BorderBrush="{DynamicResource BorderBrush}" Padding="8" controls:IconElement.Geometry="{StaticResource RightGeometry}" Foreground="{DynamicResource PrimaryTextBrush}" Background="{DynamicResource SecondaryRegionBrush}" x:Name="PART_ScrollButtonRight"/>
                         <Border Visibility="{Binding Visibility,ElementName=PART_OverflowButton}" Width="1" Background="{DynamicResource BorderBrush}"/>
                         <controls:ContextMenuToggleButton x:Name="PART_OverflowButton" Visibility="Collapsed" Style="{StaticResource ToggleButtonIconTransparent}" controls:IconSwitchElement.Geometry="{StaticResource DownGeometry}" controls:IconSwitchElement.GeometrySelected="{StaticResource UpGeometry}"/>
                     </StackPanel>
